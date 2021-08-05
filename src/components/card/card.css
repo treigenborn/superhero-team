@@ -1,0 +1,71 @@
+.more-info {
+  position: fixed;
+  display: flex;
+  top: 10%;
+  left: 10%;
+  width: 1200px;
+  height: 70vh;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: 5px solid #333;
+  z-index: 10;
+}
+
+.more-info img {
+  width: 300px;
+  height: auto;
+  margin: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.superhero-info {
+  display: flex;
+  height: 90%;
+  margin: 30px;
+}
+
+.powerstats {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  height: 100%;
+}
+
+.personal-info p {
+  margin: 10px;
+}
+
+.more-info button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+  margin-right: 10px;
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .more-info {
+    width: 90%;
+    top: 20px;
+    left: 20px;
+    flex-direction: column;
+    height: 90vh;
+    overflow: scroll;
+  }
+  .more-info img {
+    margin: 10px auto;
+    width: 30%;
+  }
+}
